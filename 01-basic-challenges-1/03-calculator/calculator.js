@@ -7,22 +7,16 @@ function calculator(num1, num2, operator) {
     return 'operator must be a string';
   }
   // check valid operator
-  if (
-    operator === '+' ||
-    operator === '-' ||
-    operator === '*' ||
-    operator === '/'
-  ) {
-    // perform calculation
-    if (operator === '+') {
-      return num1 + num2;
-    } else if (operator === '-') {
-      return num1 - num2;
-    } else if (operator === '*') {
-      return num1 * num2;
-    } else if (operator === '/') {
-      return num1 / num2;
-    }
+
+  // perform calculation
+  if (operator === '+') {
+    return num1 + num2;
+  } else if (operator === '-') {
+    return num1 - num2;
+  } else if (operator === '*') {
+    return num1 * num2;
+  } else if (operator === '/') {
+    return num1 / num2;
   } else {
     return 'operator must be +, -, *, or /';
   }
