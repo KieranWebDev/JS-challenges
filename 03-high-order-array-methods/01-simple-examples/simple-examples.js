@@ -8,6 +8,7 @@ console.log(doubledNums);
 /**
  * filter: Creates a new array with elements that satisfy a specified condition.
  */
+const filterByEven = numbers.filter((item) => item % 2 === 0);
 
 /**
  * reduce: Accumulates array elements into a single value using a provided function.
